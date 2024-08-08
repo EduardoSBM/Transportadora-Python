@@ -1,0 +1,39 @@
+meta {
+  name: CRUD
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/demanda
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "remetente": "shoope",
+  "enderecoRemetente": "rua do silicio china",
+  "destinatario": "marine melo",
+  "enderecoDestinatario": "SATC",
+  "valor": 30,
+  "carga": "fralda",
+  "pesoCarga": 2,
+  "volumeCarga": 120,
+  "codcaminhao": 1 
+  }
+}
+
+body:text {
+  'cpf'; 123;
+  'nome': "joao";
+  'cargahoraria': 12;
+  
+}
+
+body:sparql {
+  'cpf'= 123,
+  'nome'= "joao",
+  'cargahoraria'= 12
+  
+}
